@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0FDEE"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:entries="@array/paises"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/uth" />
+    <Spinner
+        android:id="@+id/sppais"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:entries="@array/paises"
+        />
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txttel"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/txtnota"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnsalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Contacto" />
+
+    <Button
+        android:id="@+id/btnlista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contactos Salvados" />
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1BABA"
+    tools:context=".ActivityAcciones">
+
+
+    <EditText
+        android:id="@+id/txtnombr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtte"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombr"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txtnot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtte"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/btnact"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:text="Actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnot" />
+
+    <Button
+        android:id="@+id/btneliminar"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="36dp"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnact"
+        app:layout_constraintTop_toBottomOf="@+id/txtnot" />
+
+    <Button
+        android:id="@+id/btncomp"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:text="Compartir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnllamar"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnact"
+        app:layout_constraintVertical_bias="0.142"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnllamar"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="36dp"
+        android:text="Llamar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btneliminar"
+        app:layout_constraintVertical_bias="0.142" />
+</androidx.constraintlayout.widget.ConstraintLayout>

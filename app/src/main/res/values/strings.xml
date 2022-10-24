@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PM1E18169</string>
+    <string-array name="paises">
+        <item>Honduras</item>
+        <item>El Salvador</item>
+        <item>Costa Rica</item>
+        <item>Panama</item>
+        <item>Nicaragua</item>
+        <item>Guatemala</item>
+    </string-array>
+</resources>
